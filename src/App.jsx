@@ -1,5 +1,6 @@
 import Header from './components/header.jsx'
 import Hero from './components/hero.jsx'
+import About from './components/about.jsx'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
         <Header />
         <Hero />
+        <About />
     </>
   )
 }
