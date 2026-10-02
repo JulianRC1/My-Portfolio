@@ -1,0 +1,286 @@
+.skills {
+  width: 100%;
+  padding: 90px 24px;
+
+  background-color: #f8fafc;
+}
+
+.skills-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.skills-header {
+  margin-bottom: 25px;
+}
+
+.section-tag {
+  display: inline-block;
+
+  margin-bottom: 12px;
+  padding: 3px 9px;
+
+  border: 1px solid #10aab6;
+  border-radius: 3px;
+
+  color: #10b981;
+
+  font-family: "Cascadia Code", "JetBrains Mono", monospace;
+  font-size: 10px;
+}
+
+.skills-header h2 {
+  margin: 0;
+
+  color: #172033;
+
+  font-family: "Geist", sans-serif;
+  font-size: 28px;
+  font-weight: 750;
+
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+}
+
+/* =========================
+   FILTERS
+========================= */
+
+.skills-filters {
+  display: flex;
+  gap: 8px;
+
+  margin-bottom: 45px;
+}
+
+.filter-button {
+  padding: 7px 14px;
+
+  border: 1px solid #dbe2ea;
+  border-radius: 4px;
+
+  background: transparent;
+
+  color: #64748b;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.filter-button:hover {
+  color: #172033;
+  border-color: #94a3b8;
+}
+
+.filter-button.active {
+  color: white;
+  background-color: #10b981;
+  border-color: #10aab6;
+  font-weight: 600;
+}
+
+/* =========================
+   TECHNOLOGY SLIDER
+========================= */
+
+.technologies-slider {
+  width: 100%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  cursor: grab;
+
+  user-select: none;
+
+  scrollbar-width: none;
+
+  touch-action: pan-y;
+}
+
+.technologies-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.technologies-slider.is-dragging {
+  cursor: grabbing;
+}
+
+/* =========================
+   TRACK
+========================= */
+
+.technologies-track {
+  width: max-content;
+  min-width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 65px;
+
+  padding: 15px 25px 30px;
+}
+
+/* =========================
+   TECHNOLOGY
+========================= */
+
+.technology {
+  width: 125px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 14px;
+
+  animation: float 4s ease-in-out infinite;
+
+  animation-delay: var(--delay);
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+/* =========================
+   ICON
+========================= */
+
+.technology-icon-wrapper {
+  width: 75px;
+  height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.technology-icon {
+  width: 55px;
+  height: 55px;
+
+  color: #475569;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.technology:hover {
+  transform: translateY(-8px);
+}
+
+.technology:hover .technology-icon {
+  color: #10b981;
+
+  transform: scale(1.1);
+}
+
+/* =========================
+   NAME
+========================= */
+
+.technology-name {
+  color: #475569;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+
+  text-align: center;
+  white-space: nowrap;
+}
+
+.technology:hover .technology-name {
+  color: #10b981;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* =========================
+   FLOATING ANIMATION
+========================= */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+/* =========================
+   DRAG HINT
+========================= */
+
+.drag-hint {
+  margin-top: 5px;
+
+  color: #94a3b8;
+
+  font-family: "Cascadia Code", "JetBrains Mono", monospace;
+  font-size: 9px;
+
+  text-align: center;
+}
+
+/* =========================
+   MOBILE
+========================= 
+
+@media (max-width: 600px) {
+  .skills {
+    padding: 70px 18px;
+  }
+
+  .skills-header h2 {
+    font-size: 23px;
+  }
+
+  .skills-filters {
+    margin-bottom: 35px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+  }
+
+  .skills-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .technologies-track {
+    gap: 45px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .technology {
+    width: 110px;
+  }
+
+  .technology-icon {
+    width: 50px;
+    height: 50px;
+  }
+} */
