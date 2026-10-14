@@ -1,19 +1,41 @@
-import Header from './components/header.jsx'
-import Hero from './components/hero.jsx'
-import About from './components/about.jsx'
-import Skills from './components/skills.jsx'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Header from "./components/header";
+import Hero from "./components/hero";
+import About from "./components/about";
+import Skills from "./components/skills";
+import FeaturedProjects from "./components/featuredProjects";
+import Projects from "./pages/projects";
 
 function App() {
-
   return (
-    <>
-        <Header />
-        <Hero />
-        <About />
-        <Skills />
-    </>
-  )
+    <BrowserRouter>
+
+      <Header />
+
+      <Routes>
+
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <Skills />
+              <FeaturedProjects />
+            </>
+          }
+        />
+
+        <Route
+          path="/projects"
+          element={<Projects />}
+        />
+
+      </Routes>
+
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
