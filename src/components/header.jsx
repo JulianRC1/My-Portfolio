@@ -33,9 +33,10 @@ const Header = () => {
                     <a href="#about" onClick={(e) => handleNavClick(e, "about")}>About</a>
                     <a href="#skills" onClick={(e) => handleNavClick(e, "skills")}>Skills</a>
                     <a href="#projects" onClick={(e) => handleNavClick(e, "projects")}>Projects</a>
+                    <a href="#timeline" onClick={(e) => handleNavClick(e, "timeline")}>Timeline</a>
                     <a href="#contact" onClick={(e) => handleNavClick(e, "contact")}>Contact</a>
 
-                    <a href="resume.pdf" className="resume-button"> Resume <Download size={16} /></a>
+                    <a href="resume.pdf" className="resume-button"> Resume <Download size={14} /></a>
                 </nav>
             </div>
         </header>
