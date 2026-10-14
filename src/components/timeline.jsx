@@ -14,7 +14,7 @@ const timelineItems = [
 ];
 const Timeline = () => {
   return (
-    <section className="timeline" id="experience">
+    <section className="timeline" id="timeline">
       <div className="timeline-container">
         <header className="timeline-header">
           <span className="section-tag">
