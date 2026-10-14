@@ -8,6 +8,7 @@ import FeaturedProjects from "./components/featuredProjects";
 import Projects from "./pages/projects";
 import Timeline from "./components/timeline";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
         />
 
       </Routes>
+
+      <Footer />
 
     </BrowserRouter>
   );
