@@ -6,6 +6,7 @@ import About from "./components/about";
 import Skills from "./components/skills";
 import FeaturedProjects from "./components/featuredProjects";
 import Projects from "./pages/projects";
+import Timeline from "./components/timeline";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <About />
               <Skills />
               <FeaturedProjects />
+              <Timeline />
             </>
           }
         />
