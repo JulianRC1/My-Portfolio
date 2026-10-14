@@ -1,0 +1,294 @@
+/* =========================
+   SECTION
+========================= */
+
+.timeline {
+  width: 100%;
+  padding: 80px 24px;
+
+  background-color: #f8fafc;
+}
+
+.timeline-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.timeline-header {
+  margin-bottom: 40px;
+}
+
+.section-tag {
+  display: inline-block;
+
+  margin-bottom: 14px;
+  padding: 3px 9px;
+
+  border: 1px solid #10aa7d;
+  border-radius: 3px;
+
+  color: #10b981;
+
+  font-family: "Cascadia Code", "JetBrains Mono", monospace;
+  font-size: 10px;
+}
+
+.timeline-header h2 {
+  margin: 0;
+
+  color: #172033;
+
+  font-family: "Geist", sans-serif;
+  font-size: 28px;
+  font-weight: 750;
+
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline-list {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Vertical connecting line */
+.timeline-list::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  bottom: 8px;
+  left: 168px;
+
+  width: 1px;
+
+  background-color: #dbe2ea;
+}
+
+.timeline-item {
+  display: grid;
+
+  grid-template-columns: 140px 20px minmax(0, 1fr);
+  column-gap: 18px;
+
+  align-items: start;
+}
+
+/* =========================
+   PERIOD
+========================= */
+
+.timeline-period {
+  padding-top: 1px;
+
+  color: #10aa7d;
+
+  font-family: "Cascadia Code", "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+/* =========================
+   MARKER
+========================= */
+
+.timeline-marker {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 1px;
+}
+
+.timeline-marker span {
+  display: block;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background-color: #10aa7d;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.timeline-content {
+  min-width: 0;
+}
+
+.timeline-content h3 {
+  margin: 0 0 7px;
+
+  color: #172033;
+
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 750;
+
+  line-height: 1.4;
+}
+
+.timeline-organization {
+  margin: 0 0 12px;
+
+  color: #64748b;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 600;
+
+  line-height: 1.5;
+}
+
+/* =========================
+   DETAILS
+========================= */
+
+.timeline-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.timeline-details li {
+  position: relative;
+
+  padding-left: 13px;
+
+  color: #475569;
+
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.timeline-details li::before {
+  content: ">";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  color: #10aa7d;
+
+  font-family: "Cascadia Code", "JetBrains Mono", monospace;
+  font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= 
+
+@media (max-width: 760px) {
+  .timeline {
+    padding: 70px 24px;
+  }
+
+  .timeline-list {
+    gap: 30px;
+  }
+
+  .timeline-list::before {
+    left: 105px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 85px 16px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+
+  .timeline-period {
+    font-size: 9px;
+    white-space: normal;
+    line-height: 1.5;
+  }
+
+  .timeline-content h3 {
+    font-size: 14px;
+  }
+
+  .timeline-details li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .timeline {
+    padding: 60px 18px;
+  }
+
+  .timeline-header h2 {
+    font-size: 24px;
+  }
+
+  .timeline-list {
+    gap: 28px;
+    padding-left: 26px;
+  }
+
+   Move the timeline rail to the left on small screens 
+  .timeline-list::before {
+    left: 9px;
+    top: 5px;
+    bottom: 5px;
+  }
+
+  .timeline-item {
+    position: relative;
+
+    display: block;
+
+    padding-left: 0;
+  }
+
+  .timeline-marker {
+    position: absolute;
+    top: 0;
+    left: -26px;
+
+    width: 20px;
+    padding-top: 4px;
+  }
+
+  .timeline-period {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 10px;
+  }
+
+  .timeline-content h3 {
+    font-size: 14px;
+  }
+
+  .timeline-organization {
+    font-size: 10px;
+  }
+
+  .timeline-details li {
+    font-size: 12px;
+  }
+}*/
