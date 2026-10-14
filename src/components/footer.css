@@ -1,0 +1,159 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  width: 100%;
+
+  border-top: 1px solid #10aa7d;
+
+  background-color: #f8fafc;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 28px 24px 22px;
+}
+
+/* =========================
+   TOP ROW
+========================= */
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+
+  color: #172033;
+  text-decoration: none;
+
+  font-family: "Cascadia Code", "JetBrains Mono", monospace;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer-cursor {
+  width: 5px;
+  height: 13px;
+
+  margin-left: 4px;
+
+  background-color: #10b981;
+}
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  color: #64748b;
+  text-decoration: none;
+
+  font-family: "Cascadia Code", "JetBrains Mono", monospace;
+  font-size: 10px;
+
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #10aa7d;
+}
+
+.footer-link svg {
+  flex-shrink: 0;
+}
+
+.footer-external-icon {
+  opacity: 0;
+  transform: translate(-2px, 2px);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-link:hover .footer-external-icon {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* =========================
+   BOTTOM ROW
+========================= */
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding-top: 15px;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-family: "Cascadia Code", "JetBrains Mono", monospace;
+  font-size: 9px;
+  line-height: 1.7;
+}
+
+.footer-credit {
+  text-align: right;
+}
+
+/* =========================
+   RESPONSIVE
+========================= 
+
+@media (max-width: 520px) {
+  .footer-container {
+    padding: 25px 18px 20px;
+  }
+
+  .footer-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-credit {
+    text-align: left;
+  }
+
+  .footer-socials {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+}*/
