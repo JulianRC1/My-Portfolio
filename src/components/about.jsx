@@ -2,11 +2,11 @@ import "./about.css";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
     <div className="about-container">
 
         <div className="about-image">
-            <img src= "./public/about-julian.png"/>
+            <img src= "./about-julian.png"/>
         </div>
 
         <div className="about-content">
