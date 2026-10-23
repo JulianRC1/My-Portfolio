@@ -1,5 +1,4 @@
 import "./hero.css";
-import networkBg from "../assets/network.jpg";
 
 const Hero = () => {
   return (
