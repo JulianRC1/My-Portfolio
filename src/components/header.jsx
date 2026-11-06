@@ -36,7 +36,7 @@ const Header = () => {
                     <a href="#timeline" onClick={(e) => handleNavClick(e, "timeline")}>Timeline</a>
                     <a href="#contact" onClick={(e) => handleNavClick(e, "contact")}>Contact</a>
 
-                    <a href="resume.pdf" className="resume-button"> Resume <Download size={14} /></a>
+                    <a href="Julian_Rendon_CV.pdf" className="resume-button" download> Resume <Download size={14} /></a>
                 </nav>
             </div>
         </header>
