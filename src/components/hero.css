@@ -240,7 +240,7 @@
     120px 120px;
 }
 
-/**@media (max-width: 850px) {
+@media (max-width: 850px) {
 
   .hero-container {
     grid-template-columns: 1fr;
@@ -268,4 +268,26 @@
     max-width: 650px;
     margin: 0 auto;
   }
-}**/
+}
+
+@media (max-width: 520px) {
+  .hero-container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    gap: 36px;
+  }
+
+  .hero-content h2 {
+    font-size: 17px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

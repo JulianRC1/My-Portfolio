@@ -9,7 +9,7 @@
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 375px 1fr;
   gap: 50px;
 
   align-items: center;
@@ -39,7 +39,6 @@
 
 .about-content {
   max-width: 760px;
-  padding-left: 200px;
 }
 
 .section-tag {
@@ -102,7 +101,7 @@
 
 /* =========================
    RESPONSIVE
-=========================
+========================= */
 
 @media (max-width: 800px) {
   .about {
@@ -137,7 +136,7 @@
   }
 }
 
-/*@media (max-width: 500px) {
+@media (max-width: 500px) {
   .about {
     padding: 60px 18px;
   }
@@ -154,4 +153,4 @@
   .about-content p {
     font-size: 12px;
   }
-}*/
+}

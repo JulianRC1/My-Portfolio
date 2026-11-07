@@ -2,6 +2,9 @@
   width: 100%;
   border-bottom: 1px solid #e2e8f0;
   background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header-content {
@@ -35,6 +38,10 @@
   margin-left: 3px;
   background: #10b981;
 }
+
+/* =========================
+   DESKTOP NAV
+========================= */
 
 .nav {
   display: flex;
@@ -73,4 +80,94 @@
 
 .resume-button span {
   font-size: 14px;
+}
+
+/* =========================
+   HAMBURGER BUTTON
+========================= */
+
+.hamburger {
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: transparent;
+
+  color: #172033;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.hamburger:hover {
+  background-color: #f1f5f9;
+}
+
+/* =========================
+   MOBILE DRAWER
+========================= */
+
+.mobile-nav {
+  display: none;
+
+  flex-direction: column;
+  gap: 4px;
+
+  padding: 12px 20px 20px;
+
+  border-top: 1px solid #e2e8f0;
+
+  background: #ffffff;
+}
+
+.mobile-nav a {
+  padding: 12px 10px;
+
+  color: #172033;
+  text-decoration: none;
+
+  font-family: "Cascadia Code", "JetBrains Mono", monospace;
+  font-size: 14px;
+  font-weight: 700;
+
+  border-radius: 5px;
+
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.mobile-nav a:hover {
+  background-color: #f8fafc;
+  color: #10aa7d;
+}
+
+.mobile-resume {
+  margin-top: 8px;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 6px;
+  justify-content: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
 }

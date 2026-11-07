@@ -268,7 +268,7 @@ a.contact-detail:hover {
 
 /* =========================
    RESPONSIVE
-=========================
+========================= */
 
 @media (max-width: 800px) {
   .contact {
@@ -317,4 +317,4 @@ a.contact-detail:hover {
     overflow-wrap: anywhere;
     line-height: 1.6;
   }
-}*/
+}
