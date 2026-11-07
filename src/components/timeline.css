@@ -200,7 +200,7 @@
 
 /* =========================
    RESPONSIVE
-========================= 
+========================= */
 
 @media (max-width: 760px) {
   .timeline {
@@ -249,7 +249,7 @@
     padding-left: 26px;
   }
 
-   Move the timeline rail to the left on small screens 
+  /* Move the timeline rail to the left on small screens */
   .timeline-list::before {
     left: 9px;
     top: 5px;
@@ -291,4 +291,4 @@
   .timeline-details li {
     font-size: 12px;
   }
-}*/
+}

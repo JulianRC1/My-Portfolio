@@ -29,7 +29,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/YOUR_PROFILE/"
+              href="https://www.linkedin.com/in/juli%C3%A1n-david-rend%C3%B3n-cardona-a6a059444/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
